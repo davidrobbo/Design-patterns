@@ -55,3 +55,12 @@ public class GameFactory {
         }
     }
 }
+
+/* What is it?
+The factory pattern is a pattern used to seperate the request for an object from the client and the instantiation of the resulting
+requested object.
+
+Why use it?
+In our example above, we know that a game can be specific to a platform. However, if we were to grow our shop and start offering
+support for Xbox games, then we need only change logic in our factory.
+*/
