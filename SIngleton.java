@@ -7,10 +7,10 @@ public class MySingleton {
 
     public static MySingleton getInstance()
     {
-        if(this.singleton.equals(null)){
-            this.singleton = new MySingleton();
+        if(MySingleton.singleton.equals(null)){
+            MySingleton.singleton = new MySingleton();
         }
-        return singleton;
+        return MySingleton.singleton;
     }
 }
 /* Referencing multiple objects which all reference the same resources
