@@ -1,4 +1,4 @@
-package com.example.designpatterns.creational.factory;
+package com.david.designpatterns;
 
 import java.util.HashMap;
 import com.example.PaymentProvider;

@@ -1,4 +1,4 @@
-package com.david.designpatterns.builder;
+package com.david.designpatterns;
 
 import MenuItem;
 

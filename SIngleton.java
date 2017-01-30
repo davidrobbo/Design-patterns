@@ -1,4 +1,4 @@
-package com.david.designpatterns.singleton;
+package com.david.designpatterns;
 
 public class MySingleton {
     private static MySingleton singleton;
