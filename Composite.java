@@ -29,7 +29,7 @@ public class TextEditor extends Content {
 
 public class Image extends Content {
     private String contents;
-    public TextEditor(String contents)
+    public Image(String contents)
     {
         this.contents = contents;
     }
@@ -52,7 +52,7 @@ public class Image extends Content {
 
 public class ContentComposite extends Content {
     private List<Content> children;
-    public TextEditor()
+    public ContentComposite()
     {
         this.contents = new ArrayList<String>();
     }
