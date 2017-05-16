@@ -44,3 +44,14 @@ The private constructor itself is utilised to ensure external objects and classe
 copies of the class into the JVM.
 
 #################
+
+### BUILDER ###
+
+Fixes some of the issues the Factory and Abstract Factory method cannot resolve when the occasion arises that an object
+requires complex instantiation procedures or excessive parameters during construction.
+
+The target class can only be access by an inner static class that then can call the private constructor of our target.
+The target offers only getters, whereas the static builder offers many setters return this instance so that the object
+can be created in a single line of code (due to chaining).
+
+###############

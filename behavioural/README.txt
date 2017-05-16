@@ -26,3 +26,10 @@ to do so, a range of classes implementing the Processor contract try and resolve
 the outcome is complete or if the next pointer is required.
 
 ###############################
+
+### STRATEGY ###
+
+Similarities to the factory pattern, the factory pattern is creational and uses client request information to provide an
+implementation of a class whereas the strategy provides the correct behaviour or operation for the client's request.
+
+################
