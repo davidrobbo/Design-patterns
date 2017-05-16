@@ -20,3 +20,27 @@ defined API, and will resolve a sub class that can fulfill their needs without b
 object is created.
 
 #######################
+
+### PROTOTYPE ###
+
+The Prototype pattern is somewhat controversial due to it's relation to object cloning. However, when the resources required
+to instantiate and build an object are vast, and if some other areas of the system require access to the same data, then
+simply copying the object as opposed to re-building (e.g. multiple DB queries) is more efficient.
+
+In order to expose the class as cloneable, the class should implement 'Java.lang.Cloneable'. The standard 'Object' class
+exposes a shallow copy method as a standard (copies an objects properties, but not relations), therefore in order to
+perform a deep copy, a new clone method must be implemented.
+
+################
+
+### SINGLETON ###
+
+Similar in some respects to the prototype pattern when it comes to preventing consumption of system resources when different
+parts of the system can function while accessing a single object.
+
+This pattern is used to ensure only one copy of the class is instantiated and accessible in the JVM at any one time. The
+singleton class provides a global public static access point to the instance, which itself calls a private constructor.
+The private constructor itself is utilised to ensure external objects and classes are prevented from introducing more
+copies of the class into the JVM.
+
+#################
